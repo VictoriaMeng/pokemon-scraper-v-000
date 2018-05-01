@@ -5,7 +5,7 @@ class Pokemon
     @db = db
   end
 
-  def save(
+  def selfsave(
   end
     )
 end
