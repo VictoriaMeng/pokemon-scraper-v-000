@@ -16,6 +16,7 @@ class Pokemon
   end
 
   def self.find(id)
+    Pokemon.all.find { |pokemon| pokemon.id = id }
   end
 
   def self.all
