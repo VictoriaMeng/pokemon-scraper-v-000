@@ -19,7 +19,6 @@ class Pokemon
     search = db.execute("SELECT id FROM pokemon WHERE id = ?", id).flatten
 
     Pokemon.all.find { |pokemon| pokemon.id = search[0] }
-
   end
 
   def self.all
