@@ -16,7 +16,7 @@ class Pokemon
   end
 
   def self.find(id, db)
-    Pokemon.all.find { |pokemon| pokemon.id = id }
+    search = db.execute("SELECT * FROM pokemon WHERE id = ?", id).flatten
   end
 
   def self.all
