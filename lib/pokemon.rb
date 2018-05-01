@@ -26,4 +26,6 @@ class Pokemon
     @@all
   end
 
+  def alter_hp
+  end
 end
